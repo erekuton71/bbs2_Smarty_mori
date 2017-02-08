@@ -32,7 +32,7 @@ try {
     }
     if ($user_id == $row['user_id']) {
     } else {
-        $smarty->display('contents_modify.tpl');
+        $smarty->display('different_user.tpl');
         print '<ul style="color:Red">';
         print "<li>他のユーザの投稿は編集できません。</li>";
         print '</ul>';
