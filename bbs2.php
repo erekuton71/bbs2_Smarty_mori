@@ -34,7 +34,7 @@ try {
     die("エラーメッセージ: {$e->getMessage()}");
 }
 $smarty->display('bbs2.tpl');
-?>
+
 
 
 

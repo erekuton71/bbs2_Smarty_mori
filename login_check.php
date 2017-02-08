@@ -38,4 +38,3 @@ try {
 }   catch (PDOException $e) {
     die("エラーメッセージ: {$e->getMessage()}");
 }
-?>

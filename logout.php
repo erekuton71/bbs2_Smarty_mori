@@ -13,5 +13,3 @@ if (isset($_SESSION["user_id"])) {
 // セッション変数のクリア
 $_SESSION = array();
 session_destroy();
-?>
-

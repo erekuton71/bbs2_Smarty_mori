@@ -42,4 +42,3 @@ try {
 }
 //処理後は掲示板トップページにリダイレクト
 header('Location: bbs2.php');
-?>

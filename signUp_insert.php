@@ -39,4 +39,4 @@ try {
 }
 //処理後は掲示板ログインページにリダイレクト
 header('Location: index.php');
-?>
+
