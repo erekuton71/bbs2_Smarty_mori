@@ -22,6 +22,7 @@ class bbs2Validator
         $this->checkNull($_POST);
         $this->checkNull($_POST);
     }
+
 //postDelete
     //必須検証
     public function postDelete_requiredCheck($value, $name) {
