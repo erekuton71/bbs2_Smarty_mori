@@ -17,6 +17,7 @@ $v->signUp_alnumTypeCheck($name, 'ユーザ名');
 $v->signUp_lengthCheck($name, 'ユーザ名', 20);
 $v->signUp_duplicateCheck($name, $name, 'SELECT name FROM member WHERE name = :value');
 $v->signUp_requiredCheck($password, 'パスワード');
+$v->signUp_alnumTypeCheck($password, 'パスワード');
 $v->signUp_rangeCheck($password, 'パスワード', 20, 6);
 $v();
 
