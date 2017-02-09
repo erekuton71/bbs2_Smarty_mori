@@ -1,5 +1,4 @@
 <?php
-require_once('Smarty.class.php');
 require_once('Smarty_connect.php');
 require_once 'DbManager.php';
 require_once 'Encode.php';
