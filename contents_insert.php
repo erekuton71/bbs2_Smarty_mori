@@ -1,5 +1,4 @@
 <?php
-require_once('Smarty.class.php');
 require_once('Smarty_connect.php');
 $smarty->display('contents_insert.tpl');
 require_once 'DbManager.php';
