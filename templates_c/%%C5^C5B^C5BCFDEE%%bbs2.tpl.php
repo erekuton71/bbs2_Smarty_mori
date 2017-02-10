@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-09 01:11:58
+<?php /* Smarty version 2.6.30, created on 2017-02-10 04:57:26
          compiled from bbs2.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bbs2.tpl', 36, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bbs2.tpl', 45, false),)), $this); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -36,18 +36,29 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bb
     <?php $_from = $this->_tpl_vars['data']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['data']):
 ?>
-    <p><?php echo $this->_tpl_vars['data']['id']; ?>
+        <p><?php echo $this->_tpl_vars['data']['id']; ?>
 ：<?php echo $this->_tpl_vars['data']['name']; ?>
  <?php echo $this->_tpl_vars['data']['datetime']; ?>
 </p>
-    <form method="post" action="contents_modify.php">
-        <input type="hidden" name="id" value="<?php echo $this->_tpl_vars['data']['id']; ?>
+        <div style="float: left">
+        <form method="post" action="contents_modify.php">
+            <input type="hidden" name="id" value="<?php echo $this->_tpl_vars['data']['id']; ?>
 ">
-        <input type="submit" value="編集">
-    </form>
-    <p><?php echo ((is_array($_tmp=$this->_tpl_vars['data']['contents'])) ? $this->_run_mod_handler('nl2br', true, $_tmp) : smarty_modifier_nl2br($_tmp)); ?>
+            <input type="submit" value="編集">
+        </form>
+        </div>
+        <div style="float: left">
+        <form method="post" action="contents_delete.php">
+            <input type="hidden" name="id" value="<?php echo $this->_tpl_vars['data']['id']; ?>
+">
+            <input type="submit" value="削除">
+        </form>
+        </div>
+        <div style="clear:both;">
+        <p><?php echo ((is_array($_tmp=$this->_tpl_vars['data']['contents'])) ? $this->_run_mod_handler('nl2br', true, $_tmp) : smarty_modifier_nl2br($_tmp)); ?>
 </p>
-    <br>
+        </div>
+        <br>
     <?php endforeach; endif; unset($_from); ?>
 </div>
 </body>

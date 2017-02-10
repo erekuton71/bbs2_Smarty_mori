@@ -28,13 +28,23 @@
 
 <div style="text-align: left">
     {foreach from = $data item = data}
-    <p>{$data.id}：{$data.name} {$data.datetime}</p>
-    <form method="post" action="contents_modify.php">
-        <input type="hidden" name="id" value="{$data.id}">
-        <input type="submit" value="編集">
-    </form>
-    <p>{$data.contents|nl2br}</p>
-    <br>
+        <p>{$data.id}：{$data.name} {$data.datetime}</p>
+        <div style="float: left">
+        <form method="post" action="contents_modify.php">
+            <input type="hidden" name="id" value="{$data.id}">
+            <input type="submit" value="編集">
+        </form>
+        </div>
+        <div style="float: left">
+        <form method="post" action="contents_delete.php">
+            <input type="hidden" name="id" value="{$data.id}">
+            <input type="submit" value="削除">
+        </form>
+        </div>
+        <div style="clear:both;">
+        <p>{$data.contents|nl2br}</p>
+        </div>
+        <br>
     {/foreach}
 </div>
 </body>

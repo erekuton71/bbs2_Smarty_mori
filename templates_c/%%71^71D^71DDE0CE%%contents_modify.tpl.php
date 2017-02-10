@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-09 01:13:15
+<?php /* Smarty version 2.6.30, created on 2017-02-10 04:58:04
          compiled from contents_modify.tpl */ ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -31,6 +31,5 @@
         <p><input type="submit" value="投稿する"></p>
     </div>
 </form>
-<a  href="contents_delete.php">投稿を削除する</a>
 </body>
 </html>

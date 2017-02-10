@@ -25,6 +25,5 @@
         <p><input type="submit" value="投稿する"></p>
     </div>
 </form>
-<a  href="contents_delete.php">投稿を削除する</a>
 </body>
 </html>

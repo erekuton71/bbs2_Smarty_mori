@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-09 01:15:14
+<?php /* Smarty version 2.6.30, created on 2017-02-10 04:59:57
          compiled from contents_delete.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'contents_delete.tpl', 12, false),)), $this); ?>
@@ -9,7 +9,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'co
 <head><title>BBS2投稿削除ページ</title></head>
 <body>
 <h1 aligin="center">BBS2投稿削除ページ</h1>
-<a  href="contents_modify.php">BBS2投稿編集ページに戻る</a>
+<a  href="bbs2.php">BBS2に戻る</a>
 <div style="text-align: left">
     <?php $_from = $this->_tpl_vars['data']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['data']):

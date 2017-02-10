@@ -5,7 +5,7 @@
 <head><title>BBS2投稿削除ページ</title></head>
 <body>
 <h1 aligin="center">BBS2投稿削除ページ</h1>
-<a  href="contents_modify.php">BBS2投稿編集ページに戻る</a>
+<a  href="bbs2.php">BBS2に戻る</a>
 <div style="text-align: left">
     {foreach from = $data item = data}
         <p>{$data.id}：{$data.name} {$data.datetime}</p>

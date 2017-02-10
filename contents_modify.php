@@ -29,8 +29,7 @@ try {
         $_SESSION["contents"] = $row['contents'];
         $smarty->assign('contents',$_SESSION["contents"]);
     }
-    if ($user_id == $row['user_id']) {
-    } else {
+    if (!($user_id == $row['user_id'])) {
         $smarty->display('different_user.tpl');
         print '<ul style="color:Red">';
         print "<li>他のユーザの投稿は編集できません。</li>";

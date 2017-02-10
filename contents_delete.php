@@ -10,6 +10,10 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 //入力データの受け取り
+if (!(isset($_SESSION["id"]))) {
+    $_SESSION["id"] = $_POST["id"];
+    $id = $_SESSION["id"];
+}
 $id = $_SESSION["id"];
 $user_id = $_SESSION["user_id"];
 
@@ -20,6 +24,7 @@ try {
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
     if (!($user_id == $row['user_id'])) {
+        $smarty->display('different_user.tpl');
         print '<ul style="color:Red">';
         print "<li>他のユーザの投稿は編集できません。</li>";
         print '</ul>';
