@@ -17,6 +17,7 @@ $contents = $_POST['contents'];
 //エラー表示
 $v = new bbs2Validator();
 $v->contents_requiredCheck($_POST['contents'], '本文');
+$v->contents_lengthCheck($_POST['contents'], '本文', 200);
 $v();
 
 try {

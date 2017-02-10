@@ -46,6 +46,15 @@ class bbs2Validator
         }
     }
 
+    //本文文字列長検証（$len文字以内であるか）
+    public function contents_lengthCheck($value, $word, $len) {
+        if (trim($value) !== '') {
+            if (mb_strlen($value) > $len) {
+                $this->_errors[] = "{$word}は{$len}文字以内で入力してください。";
+            }
+        }
+    }
+
 //signUp
     //必須検証
     public function signUp_requiredCheck($value, $word) {

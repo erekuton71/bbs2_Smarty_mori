@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-10 04:57:26
+<?php /* Smarty version 2.6.30, created on 2017-02-10 05:09:36
          compiled from bbs2.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bbs2.tpl', 45, false),)), $this); ?>
@@ -26,7 +26,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bb
     <div style="text-align: center">
         <p>ユーザ名：<?php echo $this->_tpl_vars['name']; ?>
 </p>
-        <textarea class="textarea" name="contents" cols="24" rows="5" id="ta2" wrap="hard" placeholder="本文を入力してください。"></textarea>
+        <textarea class="textarea" name="contents" cols="24" rows="5" id="ta2" wrap="hard" placeholder="本文を入力してください。（200文字以内）"></textarea>
         <p><input type="submit" value="投稿する"></p>
     </div>
 </form>

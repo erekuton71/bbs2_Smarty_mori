@@ -20,7 +20,7 @@
 <form method="post" action="contents_insert.php" >
     <div style="text-align: center">
         <p>ユーザ名：{$name}</p>
-        <textarea class="textarea" name="contents" cols="24" rows="5" id="ta2" wrap="hard" placeholder="本文を入力してください。"></textarea>
+        <textarea class="textarea" name="contents" cols="24" rows="5" id="ta2" wrap="hard" placeholder="本文を入力してください。（200文字以内）"></textarea>
         <p><input type="submit" value="投稿する"></p>
     </div>
 </form>
