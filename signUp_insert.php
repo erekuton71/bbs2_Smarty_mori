@@ -36,6 +36,6 @@ try {
 }   catch (PDOException $e) {
     die("エラーメッセージ: {$e->getMessage()}");
 }
-//処理後は掲示板ログインページにリダイレクト
+//処理後は新規会員登録成功ページにリダイレクト
 header('Location: signUp_success.php');
 
