@@ -5,7 +5,6 @@
 <head><title>BBS2新規会員登録</title></head>
 <body>
 <h1 aligin="center">BBS2新規会員登録</h1>
-<hr />
 <a  href="index.php">ログインページに戻る</a>
 <ul>
     <li>ユーザ名は半角英数字で20文字以内</li>

@@ -37,5 +37,5 @@ try {
     die("エラーメッセージ: {$e->getMessage()}");
 }
 //処理後は掲示板ログインページにリダイレクト
-header('Location: index.php');
+header('Location: signUp_success.php');
 

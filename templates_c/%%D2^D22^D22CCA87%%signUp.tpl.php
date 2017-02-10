@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-09 01:11:14
+<?php /* Smarty version 2.6.30, created on 2017-02-10 05:25:15
          compiled from signUp.tpl */ ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -7,7 +7,6 @@
 <head><title>BBS2新規会員登録</title></head>
 <body>
 <h1 aligin="center">BBS2新規会員登録</h1>
-<hr />
 <a  href="index.php">ログインページに戻る</a>
 <ul>
     <li>ユーザ名は半角英数字で20文字以内</li>
