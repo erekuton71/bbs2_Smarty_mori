@@ -28,9 +28,8 @@ try {
         $_SESSION['user_id'] = $row['id'];
         header('Location: bbs2.php');
     } else {
-        print '<ul style="color:Red">';
-            print "<li>ユーザ名とパスワードが一致しません。</li>";
-        print '</ul>';
+        $smarty->assign('err', 'login');
+        $smarty->display('error.tpl');
     }
     $db = NULL;
 }   catch (PDOException $e) {

@@ -15,6 +15,7 @@
 {/literal}
 <body>
 <h1 aligin="center">BBS2投稿編集ページ</h1>
+<hr />
 <a  href="bbs2.php">BBS2に戻る</a>
 <form method="post" action="editedContents_insert.php" >
     <div style="text-align: center">

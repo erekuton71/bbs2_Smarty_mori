@@ -24,13 +24,11 @@ try {
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
     if (!($user_id == $row['user_id'])) {
-        $smarty->display('different_user.tpl');
-        print '<ul style="color:Red">';
-        print "<li>他のユーザの投稿は編集できません。</li>";
-        print '</ul>';
+        $smarty->assign('err', 'user');
+        $smarty->display('error.tpl');
         exit;
     }
-//結果セットの内容を順に割当て
+//結果セットの内容を割当て
     $data = array();
     $data[] = $row;
     $smarty->assign('data',$data);

@@ -27,9 +27,8 @@ try {
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
     if (!(password_verify($password, $row['password']))) {
-        print '<ul style="color:Red">';
-        print "<li>パスワードが違います。</li>";
-        print '</ul>';
+        $smarty->assign('err', 'password');
+        $smarty->display('error.tpl');
         exit;
     }
     //DELETE命令の準備

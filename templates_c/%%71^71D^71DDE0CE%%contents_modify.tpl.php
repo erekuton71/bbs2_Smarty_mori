@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-10 04:58:04
+<?php /* Smarty version 2.6.30, created on 2017-02-13 16:19:20
          compiled from contents_modify.tpl */ ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -18,6 +18,7 @@
 
 <body>
 <h1 aligin="center">BBS2投稿編集ページ</h1>
+<hr />
 <a  href="bbs2.php">BBS2に戻る</a>
 <form method="post" action="editedContents_insert.php" >
     <div style="text-align: center">

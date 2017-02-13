@@ -18,8 +18,7 @@ try {
     $stt = $db->prepare("SELECT * FROM member WHERE id = '$user_id'");
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
-    $name = $row['name'];
-    $smarty->assign('name',$name);
+    $smarty->assign('name',$row['name']);
 //SELECT命令の実行
     $stt = $db->prepare('SELECT * FROM post ORDER BY id DESC');
     $stt->execute();

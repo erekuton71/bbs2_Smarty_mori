@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.30, created on 2017-02-10 05:09:36
+<?php /* Smarty version 2.6.30, created on 2017-02-13 16:18:11
          compiled from bbs2.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'nl2br', 'bbs2.tpl', 45, false),)), $this); ?>

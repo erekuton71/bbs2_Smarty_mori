@@ -5,6 +5,7 @@
 <head><title>BBS2投稿削除ページ</title></head>
 <body>
 <h1 aligin="center">BBS2投稿削除ページ</h1>
+<hr />
 <a  href="bbs2.php">BBS2に戻る</a>
 <div style="text-align: left">
     {foreach from = $data item = data}
