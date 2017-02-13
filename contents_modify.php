@@ -22,8 +22,7 @@ try {
     $stt = $db->prepare("SELECT * FROM post WHERE id = '$id'");
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
-    $name = $row['name'];
-    $smarty->assign('name',$name);
+    $smarty->assign('name',$row['name']);
     if (!(isset($_SESSION["contents"]))) {
         $_SESSION["contents"] = $row['contents'];
         $smarty->assign('contents',$_SESSION["contents"]);
