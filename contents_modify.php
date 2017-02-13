@@ -14,7 +14,7 @@ if (!(isset($_SESSION["id"]))) {
     $_SESSION["id"] = $_POST["id"];
     $id = $_SESSION["id"];
 }
-$id = $_SESSION["id"];
+//$id = $_SESSION["id"];
 $user_id = $_SESSION["user_id"];
 
 try {
