@@ -30,8 +30,7 @@ try {
     $stt = $db->prepare("SELECT * FROM member WHERE id = '$user_id'");
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
-    $hashpassword = $row['password'];
-    if (!(password_verify($password, $hashpassword))) {
+    if (!(password_verify($password, $row['password']))) {
         print '<ul style="color:Red">';
         print "<li>パスワードが違います。</li>";
         print '</ul>';
