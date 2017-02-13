@@ -22,8 +22,7 @@ try {
     $stt = $db->prepare("SELECT * FROM member WHERE name = '$name'");
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
-    $hashpassword = $row['password'];
-    if (password_verify($password, $hashpassword)) {
+    if (password_verify($password, $row['password'])) {
         //セッションIDを新規に発行
         session_regenerate_id(true);
         $_SESSION['user_id'] = $row['id'];
