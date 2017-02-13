@@ -25,9 +25,8 @@ try {
     $stt->execute();
 //結果セットの内容を順に割当て
     $data = array();
-    while($row = $stt->fetch(PDO::FETCH_ASSOC)) {
-        $data[] = $row;
-    }
+    $row = $stt->fetchAll(PDO::FETCH_ASSOC);
+    $data[] = $row;
     $smarty->assign('data',$data);
     $db = NULL;
 }   catch (PDOException $e) {
