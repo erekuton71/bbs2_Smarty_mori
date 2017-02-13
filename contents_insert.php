@@ -27,13 +27,14 @@ try {
     $stt = $db->prepare("SELECT * FROM member WHERE id = '$user_id'");
     $stt->execute();
     $row = $stt->fetch(PDO::FETCH_NAMED);
-    $name = $row['name'];
+    //$name = $row['name'];
+    //$stt->bindValue(':name', $row['name']);
     //INSERT命令の準備
     $stt = $db->prepare('INSERT INTO post (contents, user_id, name) VALUES (:contents, :user_id, :name)');
     //INSERT命令にポストデータの内容をセット
     $stt->bindValue(':user_id', $user_id);
     $stt->bindValue(':contents', $contents);
-    $stt->bindValue(':name', $name);
+    $stt->bindValue(':name', $row['name']);
     //INSERT命令を実行
     $stt->execute();
     $db = NULL;

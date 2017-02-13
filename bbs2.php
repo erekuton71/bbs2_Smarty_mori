@@ -24,9 +24,7 @@ try {
     $stt = $db->prepare('SELECT * FROM post ORDER BY id DESC');
     $stt->execute();
 //結果セットの内容を順に割当て
-    $data = array();
-    $row = $stt->fetchAll(PDO::FETCH_ASSOC);
-    $data[] = $row;
+    $data = $stt->fetchAll();
     $smarty->assign('data',$data);
     $db = NULL;
 }   catch (PDOException $e) {
